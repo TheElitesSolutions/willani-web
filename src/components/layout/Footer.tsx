@@ -18,16 +18,31 @@ export default function Footer() {
                     <div>
                         <h4 className="text-gold-400 font-serif text-lg mb-4">Quick Links</h4>
                         <ul className="space-y-2">
-                            {["Home", "Our Story", "Brands", "Process", "Contact"].map((item) => (
-                                <li key={item}>
-                                    <Link
-                                        href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
-                                        className="text-olive-200 hover:text-gold-400 transition-colors text-sm"
-                                    >
-                                        {item}
-                                    </Link>
-                                </li>
-                            ))}
+                            <li>
+                                <Link href="/" className="text-olive-200 hover:text-gold-400 transition-colors text-sm">
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/about" className="text-olive-200 hover:text-gold-400 transition-colors text-sm">
+                                    Our Story
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/products" className="text-olive-200 hover:text-gold-400 transition-colors text-sm">
+                                    Brands
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/process" className="text-olive-200 hover:text-gold-400 transition-colors text-sm">
+                                    Process
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/contact" className="text-olive-200 hover:text-gold-400 transition-colors text-sm">
+                                    Contact
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -74,7 +89,7 @@ export default function Footer() {
 
                 <div className="border-t border-olive-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-olive-400">
                     <p>&copy; {new Date().getFullYear()} Willani s.a.r.l. All rights reserved.</p>
-                    <p>Designed by Antigravity</p>
+                    <p>Designed by The Elites Solutions</p>
                 </div>
             </div>
         </footer>
